@@ -1,12 +1,60 @@
-# React + Vite
+# DeSci Platform MVP
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the MVP (Minimum Viable Product) for a decentralized science (DeSci) platform built on the Solana testnet. The goal is to enable open, transparent, and community-driven scientific collaboration using blockchain technology.
 
-Currently, two official plugins are available:
+## 🔬 Purpose
+- Promote open-access and decentralized validation of scientific work
+- Provide transparent publication & reward mechanisms
+- Build a DAO to manage funding, curation, and incentives
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠 Tech Stack
+- Vite + React
+- Solana (testnet)
+- Wallet Adapter
+- VS Code
+- GitHub for collaboration
 
-## Expanding the ESLint configuration
+## 🚀 Getting Started
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 1. Clone the repo
+```bash
+git clone https://github.com/your-username/desciplatform.git
+cd desciplatform
+```
+
+### 2. Install dependencies
+```bash
+npm install
+```
+
+### 3. Run the dev server
+```bash
+npm run dev
+```
+
+### 4. Connect to Solana testnet
+Add wallet adapter components and configure to connect to Solana testnet.
+
+## 📦 Dependencies
+```json
+"dependencies": {
+  "@solana/web3.js": "^1.89.0",
+  "@solana/wallet-adapter-base": "^0.9.19",
+  "@solana/wallet-adapter-react": "^0.15.17",
+  "@solana/wallet-adapter-wallets": "^0.15.17",
+  "@solana/wallet-adapter-react-ui": "^0.15.17",
+  "react": "^18.2.0",
+  "react-dom": "^18.2.0"
+}
+```
+
+## 🧠 Vision
+This platform will serve as a foundation for:
+- Decentralized peer review
+- Funding DAO for open science projects
+- Community-driven reputation system
+
+---
+Built with ❤️ to empower researchers and validate breakthrough ideas.
+
+> Join us in building the future of science: decentralized, open, and unstoppable.
