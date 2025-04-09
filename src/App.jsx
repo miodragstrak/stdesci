@@ -20,7 +20,9 @@ const App = () => {
             </div>
             <div style={styles.main}>
               <h1 style={styles.title}>DeSci DAO Platform</h1>
-              <p style={styles.subtitle}>Decentralized Science for a Transparent, Open, and Borderless Future</p>
+              <p style={styles.subtitle}>
+                Decentralized Science for a Transparent, Open, and Borderless Future
+              </p>
             </div>
           </div>
         </WalletModalProvider>
@@ -37,7 +39,7 @@ const styles = {
     color: neonColor,
     minHeight: "100vh",
     padding: "2rem",
-    fontFamily: "Orbitron, sans-serif",
+    fontFamily: "'Orbitron', sans-serif",
     position: "relative",
   },
   header: {
@@ -55,7 +57,7 @@ const styles = {
   },
   title: {
     fontSize: "3rem",
-    textShadow: "0 0 10px ${neonColor}, 0 0 20px ${neonColor}",
+    textShadow: `0 0 10px ${neonColor}, 0 0 20px ${neonColor}`,
     marginBottom: "1rem",
   },
   subtitle: {
