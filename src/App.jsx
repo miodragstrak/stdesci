@@ -1,9 +1,17 @@
 import React from "react";
-import { ConnectionProvider, WalletProvider } from "@solana/wallet-adapter-react";
-import { WalletModalProvider, WalletMultiButton } from "@solana/wallet-adapter-react-ui";
+import {
+  ConnectionProvider,
+  WalletProvider,
+  useWallet,
+} from "@solana/wallet-adapter-react";
+import {
+  WalletModalProvider,
+  WalletMultiButton,
+} from "@solana/wallet-adapter-react-ui";
 import { PhantomWalletAdapter } from "@solana/wallet-adapter-wallets";
 import { clusterApiUrl } from "@solana/web3.js";
 import "@solana/wallet-adapter-react-ui/styles.css";
+import WalletInfo from "./WalletInfo";
 
 const App = () => {
   const network = "devnet";
@@ -17,11 +25,13 @@ const App = () => {
           <div style={styles.container}>
             <div style={styles.header}>
               <WalletMultiButton />
+              <WalletInfo />
             </div>
             <div style={styles.main}>
               <h1 style={styles.title}>DeSci DAO Platform</h1>
               <p style={styles.subtitle}>
-                Decentralized Science for a Transparent, Open, and Borderless Future
+                Decentralized Science for a Transparent, Open, and Borderless
+                Future
               </p>
             </div>
           </div>
@@ -39,13 +49,14 @@ const styles = {
     color: neonColor,
     minHeight: "100vh",
     padding: "2rem",
-    fontFamily: "'Orbitron', sans-serif",
+    fontFamily: "Orbitron, sans-serif",
     position: "relative",
   },
   header: {
     position: "absolute",
     top: "1rem",
     right: "1rem",
+    textAlign: "right",
   },
   main: {
     display: "flex",
